@@ -24,7 +24,7 @@ Staring the service locally:
 $ git clone https://github.com/altfatterz/chuck-norris-facts
 $ cd chuck-norris-facts
 $ ./gradlew clean build  // builds and runs the tests
-$ java -jar build/libs/chuck-norris-facts-0.0.1-SNAPSHOT.jar --spring.profiles.active=local
+$ java -jar build/libs/chuck-norris-facts-0.0.1-SNAPSHOT.jar --spring.profiles.active=postgres
 ```
 
 in a new terminal

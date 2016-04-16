@@ -17,7 +17,7 @@ apply plugin: 'eclipse'
 apply plugin: 'spring-boot' 
 
 jar {
-	baseName = 'example-spring-boot-test'
+	baseName = 'chuck-norris-facts'
 	version = '0.0.1-SNAPSHOT'
 }
 sourceCompatibility = 1.8
