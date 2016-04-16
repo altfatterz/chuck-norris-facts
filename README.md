@@ -14,9 +14,11 @@ $ postgres -D /usr/local/var/postgres  // start the server
 new terminal window
 
 ```
-$ createdb `whoami`
-$ psql 
+$ createdb `mydb`
+$ psql   // verify that you can connect to postgresql
 ```
+
+The initial schema will be generated and populated using [Flywaydb](https://flywaydb.org) when the service starts.
 
 Staring the service locally:
 
@@ -35,6 +37,8 @@ $ curl localhost:8080  // get a random chuck norris fact
    "fact":"the movie 'Aliens vs Predators' was orginally supposed to be 'Aliens and Predators vs Chuck Norris' but that movie only lasted 8 seconds."
 }
 ```
+
+Follow the blog post: http://zoltanaltfatter.com/2016/04/16/trying-out-spring-boot-1.4.0-new-features-and-enhancements/
 
 
 
