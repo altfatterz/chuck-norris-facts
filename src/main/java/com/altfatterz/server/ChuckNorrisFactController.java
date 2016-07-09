@@ -1,4 +1,4 @@
-package com.altfatterz;
+package com.altfatterz.server;
 
 
 import org.slf4j.Logger;

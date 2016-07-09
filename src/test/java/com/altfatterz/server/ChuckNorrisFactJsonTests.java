@@ -1,5 +1,6 @@
-package com.altfatterz;
+package com.altfatterz.server;
 
+import com.altfatterz.server.ChuckNorrisFact;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.autoconfigure.json.JsonTest;

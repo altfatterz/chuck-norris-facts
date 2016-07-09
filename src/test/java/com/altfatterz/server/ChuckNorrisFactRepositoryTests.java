@@ -1,5 +1,7 @@
-package com.altfatterz;
+package com.altfatterz.server;
 
+import com.altfatterz.server.ChuckNorrisFact;
+import com.altfatterz.server.ChuckNorrisFactRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

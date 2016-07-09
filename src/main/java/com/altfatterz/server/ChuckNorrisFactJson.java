@@ -1,4 +1,4 @@
-package com.altfatterz;
+package com.altfatterz.server;
 
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.core.JsonParser;

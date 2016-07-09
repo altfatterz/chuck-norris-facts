@@ -1,11 +1,11 @@
-package com.altfatterz;
+package com.altfatterz.server;
 
+import com.altfatterz.server.ChuckNorrisFact;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
-import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.jdbc.Sql;
 import org.springframework.test.context.junit4.SpringRunner;
 
@@ -22,8 +22,7 @@ public class ChuckNorrisFactApplicationIntegrationTests {
 
 	@Test
 	public void random() {
-		ResponseEntity<String> fact = template.getForEntity("/", String.class); // cannot use ChuckNorrisFact deserialization
-
-		assertThat(fact.getBody(), containsString("Chuck Norris sleeps with a pillow under his gun."));
+		ChuckNorrisFact chuckNorrisFact = template.getForObject("/", ChuckNorrisFact.class);
+		assertThat( chuckNorrisFact.getText(), containsString("Chuck Norris sleeps with a pillow under his gun."));
 	}
 }
