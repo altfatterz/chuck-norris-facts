@@ -1,5 +1,5 @@
 # chuck-norris-facts
-Example repository for trying out Spring Boot 1.4.0-M2 new features and enhancements
+Example repository for trying out Spring Boot 1.4.0 new features and enhancements
 
 Running locally it expects a postgresql database, storing the chuck norris facts.
 
